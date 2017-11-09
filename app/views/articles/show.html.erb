@@ -1,0 +1,13 @@
+<% content_for :for_head do %>
+  <title><%= @article.title %></title>
+  <meta name="description" content="<%= @article.description %>">
+<% end %>
+
+<h1><%= @article.h1 %></h1>
+
+<%== @article.content %>
+
+<br />
+<div><%= link_to 'перейти на главную страницу', root_path %></div>
+<div><%= link_to 'изменить статью', edit_article_path(@article) %></div>
+<div><%= link_to 'удалить статью', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %></div>

@@ -1,0 +1,6 @@
+<%= link_to 'Create article', new_article_path %>
+<br />
+<h2>Все статьи</h2>
+<% @articles.each do |article| %>
+  <h3><%= link_to article.menu_label, article %></h3>
+<% end %>
