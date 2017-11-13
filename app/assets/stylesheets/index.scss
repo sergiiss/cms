@@ -13,14 +13,26 @@ body {
   width: 1400px;
   background-color: #f6f6f6;
   min-height: 960px;
+  -moz-box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
+  -webkit-box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
+  box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
+  ol li {
+    padding-top: 20px;
+    font-size: 1.3em;
+  }
 }
 
 .link_article {
-  height: 30px;
-  width: 1250px;
-  margin: 5px 0px;
-
   a {
-    padding: 0px 10px;
+    text-decoration: none;
+
+    color: black;
+
   }
+}
+
+#all_art {
+  padding: 20px 0px 0px 25px;
+  font-size: 1.6em;
+  font-weight: 600;
 }

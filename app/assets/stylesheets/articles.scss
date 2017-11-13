@@ -19,6 +19,9 @@
   margin: 0px auto;
   background-color: #f6f6f6;
   font-family: Source Serif Pro,serif;
+  -moz-box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
+  -webkit-box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
+  box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
 
   h1 {
     margin: 0px 0px 18px 0px;
