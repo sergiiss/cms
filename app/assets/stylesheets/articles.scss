@@ -1,47 +1,65 @@
-// Place all the styles related to the Articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-body {
-  margin: 0px;
-  padding: 0px;
-}
-
-.show {
-  background: #5999af linear-gradient(hsla(0,100%,100%,.7), transparent);
-}
-
 .title_article {
-  padding: 25px 10px;
-  margin: 0px auto;
-  width: 1080px;
-  font-family: Source Serif Pro,serif;
-  background-color: #f6f6f6;
+  padding: 25px 0px 0px 20px;
+  width: 1250px;
 }
 
 .text_article {
-  font-family: Source Serif Pro,serif;
-  background-color: #f6f6f6;
   line-height: 32px;
   font-weight: 400;
   color: rgba(0,0,0,.7);
   font-size: 22px;
-  margin: 0px auto;
-  width: 1080px;
-  padding: 10px;
+  width: 1230px;
+  padding: 5px 20px 20px 20px ;
 }
 
-.change_article {
-  background-color: #d4f4f3;
-  height: 40px;
-  width: 1100px;
+.show {
+  position: relative;
+  width: 1400px;
+  min-height: 960px;
   margin: 0px auto;
+  background-color: #f6f6f6;
+  font-family: Source Serif Pro,serif;
+
+  h1 {
+    margin: 0px 0px 18px 0px;
+  }
+}
+
+.button {
+  font-size: 0.9em;
+  width: 100px;
+  background-color: lightpink;
+  height: 40px;
+  -moz-box-shadow: 0 0 7px rgba(0,0,1,0.4);
+  -webkit-box-shadow: 0 0 7px rgba(0,0,1,0.4);
+  box-shadow: 0 0 7px rgba(0,0,1,0.4);
+  border-radius: 9px 0px 0px 9px;
+
   a {
+    padding: 5px;
+    color: white;
+    font-weight: 600;
     text-decoration: none;
-    color: red;
+    display: block;
+    height: 100%;
+    line-height: 30px;
   }
-  span {
-    padding: 0px 110px;
-    line-height: 40px;
-  }
+}
+
+.first_button {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+.second_button {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+}
+
+.third_button {
+  position: absolute;
+  top: 110px;
+  right: 0px;
 }

@@ -1,48 +1,6 @@
-<div>
-  <%= form_for @article do |f| %>
-    <div>
-      <span><%= f.label 'Название статьи' %></span>
-      <span><%= f.text_field :title %></span>
-    </div>
+<div class="form-new">
+  <div class="button first_button"><%= link_to("Main page", root_path) %></div>
+  <h2 id="title">Change article</h2>
 
-    <div>
-      <span><%= f.label 'Description' %></span>
-      <span><%= f.text_field :description %></span>
-    </div>
-
-    <div>
-      <span><%= f.label 'URL' %></span>
-      <span><%= f.text_field :slug %></span>
-    </div>
-
-    <div>
-      <span><%= f.label 'Отображение ссылки' %></span>
-      <span><%= f.text_field :menu_label %></span>
-    </div>
-
-    <div>
-      <span><%= f.label 'H1' %></span>
-      <span><%= f.text_field :h1 %></span>
-    </div>
-
-    <div>
-      <span><%= f.label 'Content' %></span>
-      <span><%= f.text_area :content %></span>
-    </div>
-
-    <div>
-      <span><%= f.label 'published_at' %></span>
-      <span><%= f.datetime_select :published_at %></span>
-    </div>
-
-    <div>
-      <span><%= f.label 'Priority' %></span>
-      <span><%= f.number_field :priority %></span>
-    </div>
-
-    <div>
-      <span></span>
-      <span><%= f.submit 'Сохранить' %></span>
-    </div>
-  <% end %>
+  <%= render 'form' %>
 </div>

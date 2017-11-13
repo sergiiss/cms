@@ -1,0 +1,26 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: Open Sans;
+  background: #5999af linear-gradient(hsla(0,100%,100%,.7), transparent);
+  min-height: 960px;
+}
+
+.all_articles {
+  position: relative;
+  margin: 0px auto;
+  width: 1400px;
+  background-color: #f6f6f6;
+  min-height: 960px;
+}
+
+.link_article {
+  height: 30px;
+  width: 1250px;
+  margin: 5px 0px;
+
+  a {
+    padding: 0px 10px;
+  }
+}

@@ -1,54 +1,6 @@
-<div class="show">
-  <div class="form-new">
-    <h2 id="title">Create article</h2>
+<div class="form-new">
+  <div class="button first_button"><%= link_to("Main page", root_path) %></div>
+  <h2 id="title">Create article</h2>
 
-    <div>
-      <%= form_for @article do |f| %>
-        <div class="table-row">
-          <span class="table-cell"><%= f.label 'Название статьи' %></span>
-          <span class="table-cell"><%= f.text_field :title %></span>
-        </div>
-
-        <div class="table-row">
-          <span class="table-cell"><%= f.label 'Description' %></span>
-          <span class="table-cell"><%= f.text_field :description %></span>
-        </div>
-
-        <div class="table-row">
-          <span class="table-cell"><%= f.label 'URL' %></span>
-          <span class="table-cell"><%= f.text_field :slug %></span>
-        </div>
-
-        <div class="table-row">
-          <span class="table-cell"><%= f.label 'Отображение ссылки' %></span>
-          <span class="table-cell"><%= f.text_field :menu_label %></span>
-        </div>
-
-        <div class="table-row">
-          <span class="table-cell"><%= f.label 'H1' %></span>
-          <span class="table-cell"><%= f.text_field :h1 %></span>
-        </div>
-
-        <div class="table-row">
-          <span class="table-cell"><%= f.label 'Content' %></span>
-          <span class="table-cell"><%= f.text_area :content %></span>
-        </div>
-
-        <div class="table-row">
-          <span class="table-cell"><%= f.label 'published_at' %></span>
-          <span class="table-cell"><%= f.datetime_select :published_at %></span>
-        </div>
-
-        <div class="table-row">
-          <span class="table-cell"><%= f.label 'Priority' %></span>
-          <span class="table-cell"><%= f.number_field :priority %></span>
-        </div>
-
-        <div class="table-row">
-          <span class="table-cell"></span>
-          <span class="table-cell" id="button"><%= f.submit 'Create' %></span>
-        </div>
-      <% end %>
-    </div>
-  </div>
+  <%= render 'form' %>
 </div>

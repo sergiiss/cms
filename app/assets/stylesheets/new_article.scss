@@ -1,8 +1,10 @@
 .form-new {
+  position: relative;
   margin: 0px auto;
-  width: 1080px;
+  width: 1400px;
   padding: 10px 0px 20px 0px;
-  background-color: #ffffff;
+  background-color: #f6f6f6;
+  min-height: 960px;
 }
 
 #title {
@@ -35,7 +37,7 @@
     border-radius: 4px;
     font-size: 1.1em;
     margin-top: 5px;
-    width: 790px;
+    width: 990px;
     height: 30px;
     padding: 0px 0px 0px 10px;
     border: 1px solid gray;
@@ -44,12 +46,12 @@
   textarea {
     padding-left: 10px;
     border-radius: 4px;
-    height: 569px;
+    height: 669px;
   }
 }
 
 #button input {
-  width: 802px;
+  width: 1002px;
   background: linear-gradient(to left, #d9ead0, #ade590, #8aed57, #ade590, #d9ead0);
   color: white;
   font-size: 1.3em;
