@@ -1,0 +1,57 @@
+.form-new {
+  margin: 0px auto;
+  width: 1080px;
+  padding: 10px 0px 20px 0px;
+  background-color: #ffffff;
+}
+
+#title {
+  margin-left: 20px;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  display: table-cell;
+  padding-left: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+
+  label {
+    vertical-align: top;
+    height: 30px;
+  }
+
+  select {
+    padding-left: 10px;
+    border-radius: 4px;
+    font-size: 1.2em;
+    background-color: #f9f9f9;
+  }
+
+  textarea, input {
+    border-radius: 4px;
+    font-size: 1.1em;
+    margin-top: 5px;
+    width: 790px;
+    height: 30px;
+    padding: 0px 0px 0px 10px;
+    border: 1px solid gray;
+  }
+
+  textarea {
+    padding-left: 10px;
+    border-radius: 4px;
+    height: 569px;
+  }
+}
+
+#button input {
+  width: 802px;
+  background: linear-gradient(to left, #d9ead0, #ade590, #8aed57, #ade590, #d9ead0);
+  color: white;
+  font-size: 1.3em;
+  font-weight: 600;
+}

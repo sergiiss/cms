@@ -3,11 +3,16 @@
   <meta name="description" content="<%= @article.description %>">
 <% end %>
 
-<h1><%= @article.h1 %></h1>
+<div class="show">
+  <h1 class="title_article"><%= @article.h1 %></h1>
 
-<%== @article.content %>
+  <div class="text_article">
+    <%== sanitize @article.content %>
+  </div>
 
-<br />
-<div><%= link_to 'перейти на главную страницу', root_path %></div>
-<div><%= link_to 'изменить статью', edit_article_path(@article) %></div>
-<div><%= link_to 'удалить статью', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %></div>
+  <div class="change_article">
+    <span><%= link_to 'перейти на главную страницу', root_path %></span>
+    <span><%= link_to 'изменить статью', edit_article_path(@article) %></span>
+    <span><%= link_to 'удалить статью', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %></span>
+  </div>
+</div>

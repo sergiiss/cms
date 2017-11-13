@@ -18,11 +18,11 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @article = Article.find(params[:id])
+    find_article
   end
 
   def update
-    @article = Article.find(params[:id])
+    find_article
 
     if @article.update_attributes(article_params)
       redirect_to @article
@@ -32,11 +32,11 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
+    find_article
   end
 
   def destroy
-    @article = Article.find(params[:id])
+    find_article
 
     @article.destroy
 
@@ -58,4 +58,8 @@ class ArticlesController < ApplicationController
         :priority
       )
   end
+
+  def find_article
+    @article = Article.friendly.find(params[:id])
+   end
 end

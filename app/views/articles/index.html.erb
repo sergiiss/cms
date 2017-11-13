@@ -1,6 +1,10 @@
-<%= link_to 'Create article', new_article_path %>
-<br />
-<h2>Все статьи</h2>
-<% @articles.each do |article| %>
-  <h3><%= link_to article.menu_label, article %></h3>
+<% if @articles.count == 0 %>
+  <div class="no_article"></div>
+<% else %>
+  <%= link_to 'Create article', new_article_path %>
+  <br />
+  <h2>Все статьи</h2>
+  <% @articles.each do |article| %>
+    <h3><%= link_to article.menu_label, article %></h3>
+  <% end %>
 <% end %>
