@@ -11,11 +11,12 @@ body {
   position: relative;
   margin: 0px auto;
   width: 1400px;
-  background-color: #f6f6f6;
+  background-color: #f7fffe;
   min-height: 960px;
   -moz-box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
   -webkit-box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
   box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
+
   ol li {
     padding-top: 20px;
     font-size: 1.3em;
@@ -25,14 +26,17 @@ body {
 .link_article {
   a {
     text-decoration: none;
-
     color: black;
 
   }
 }
 
-#all_art {
-  padding: 20px 0px 0px 25px;
+.all_art {
+  padding: 20px 0px 0px 20px;
   font-size: 1.6em;
   font-weight: 600;
+}
+
+#toggle {
+  display: none;
 }

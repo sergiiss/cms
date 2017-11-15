@@ -1,5 +1,7 @@
 <div class="form-new">
-  <div class="button first_button"><%= link_to("Main page", root_path) %></div>
+  <div class="button first_button"><%= link_to 'Main page', root_path %></div>
+  <div class="button second_button"><%= link_to 'Back', :back %></div>
+
   <h2 id="title">Create article</h2>
 
   <%= render 'form' %>

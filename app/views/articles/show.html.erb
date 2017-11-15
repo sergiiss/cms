@@ -4,11 +4,12 @@
 <% end %>
 
 <div class="show">
-  <div class="button first_button"><%= link_to("Main page", root_path) %></div>
+  <div class="button first_button"><%= link_to 'Main page', root_path %></div>
   <div class="button second_button"><%= link_to 'Change page', edit_article_path(@article) %></div>
   <div class="button third_button">
     <%= link_to 'Delete page', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %>
   </div>
+  <div class="button fourth_button"><%= link_to 'Back', :back %></div>
 
   <h1 class="title_article"><%= @article.h1 %></h1>
 

@@ -17,7 +17,7 @@
   width: 1400px;
   min-height: 960px;
   margin: 0px auto;
-  background-color: #f6f6f6;
+  background-color: #f7fffe;
   font-family: Source Serif Pro,serif;
   -moz-box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
   -webkit-box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
@@ -30,7 +30,7 @@
 
 .button {
   font-size: 0.9em;
-  width: 100px;
+  width: 120px;
   background-color: lightpink;
   height: 40px;
   -moz-box-shadow: 0 0 7px rgba(0,0,1,0.4);
@@ -46,6 +46,7 @@
     display: block;
     height: 100%;
     line-height: 30px;
+    cursor: pointer;
   }
 }
 
@@ -64,5 +65,11 @@
 .third_button {
   position: absolute;
   top: 110px;
+  right: 0px;
+}
+
+.fourth_button {
+  position: absolute;
+  top: 160px;
   right: 0px;
 }

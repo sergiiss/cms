@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.order(priority: :desc)
+    @articles           = Article.all
+    @articles_published = Article.where("articles.published_at <= ?", Time.now).order(priority: :desc)
+    @articles_planned   = Article.where("articles.published_at > ?", Time.now).order(priority: :desc)
   end
 
   def new
