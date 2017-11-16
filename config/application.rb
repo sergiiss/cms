@@ -13,6 +13,5 @@ module Cms
     # -- all .rb files in that directory are automatically loaded.
 
     config.time_zone = 'Minsk'
-    config.active_record.default_timezone = 'Minsk'
   end
 end

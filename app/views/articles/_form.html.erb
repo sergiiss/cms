@@ -1,7 +1,7 @@
 <div>
   <%= form_for @article do |f| %>
     <div class="table-row">
-      <span class="table-cell"><%= f.label 'Название статьи' %></span>
+      <span class="table-cell"><%= f.label 'Article title' %></span>
       <span class="table-cell"><%= f.text_field :title %></span>
     </div>
 
@@ -16,7 +16,7 @@
     </div>
 
     <div class="table-row">
-      <span class="table-cell"><%= f.label 'Отображение ссылки' %></span>
+      <span class="table-cell"><%= f.label 'Show link' %></span>
       <span class="table-cell"><%= f.text_field :menu_label %></span>
     </div>
 
@@ -31,8 +31,8 @@
     </div>
 
     <div class="table-row">
-      <span class="table-cell"><%= f.label 'published_at' %></span>
-      <span class="table-cell"><%= f.datetime_select :published_at, start_year: 2017 %></span>
+      <span class="table-cell"><%= f.label 'Published_at' %></span>
+      <span class="table-cell"><%= f.datetime_select :published_at, default: Time.now %></span>
     </div>
 
     <div class="table-row">
