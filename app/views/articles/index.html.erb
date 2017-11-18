@@ -7,7 +7,11 @@
         <div class="title-new">Content Management System</div>
         <div class="menu">
           <span><%= link_to 'Create article', new_article_path %></span>
-          <span><%= link_to "Show planned articles", "#" , { onClick: "showArticles(event);" } %></span>
+          <span>
+            <%= link_to "#" , { onClick: "showArticles(event);" } do %>
+              <span id="show-hide-text">Show planned articles</span>
+            <% end %>
+          </span>
         </div>
         <div class="article-index-outer" id="toggle">
           <div class="title-published">Planned articles</div>
