@@ -7,36 +7,83 @@ body {
   min-height: 960px;
 }
 
-.all_articles {
-  position: relative;
-  margin: 0px auto;
-  width: 1400px;
-  background-color: #f7fffe;
-  min-height: 960px;
-  -moz-box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
-  -webkit-box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
-  box-shadow: 0 0 8px rgba(72, 176, 196, 0.7);
-
-  ol li {
-    padding-top: 20px;
-    font-size: 1.3em;
-  }
-}
-
-.link_article {
-  a {
-    text-decoration: none;
-    color: black;
-
-  }
-}
-
-.all_art {
-  padding: 20px 0px 0px 20px;
-  font-size: 1.6em;
-  font-weight: 600;
-}
-
 #toggle {
   display: none;
+}
+
+.index-new {
+  width: 1070px;
+  min-height: 1080px;
+  margin: 0px auto;
+}
+
+.inner {
+  width: 100%;
+}
+
+.title-new {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.3em;
+  vertical-align: 65px;
+  padding: 15px 0px;
+  color: #5a5a5a;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.article-index {
+  float: left;
+  width: 350px;
+  height: 300px;
+  border: 1px solid #f2f2f2;
+  margin: 2px;
+  background-color: #123434;
+  overflow: hidden;
+
+  a {
+    display: block;
+    font-weight: 600;
+    font-size: 1.3em;
+
+    cursor: pointer;
+    color: #5a5a5a;
+    text-decoration: none;
+    text-align: center;
+    line-height: 300px;
+  }
+}
+
+.article-index-outer {
+  min-height: 380px;
+  width: 1070px;
+  margin: 0px auto;
+}
+
+.title-published {
+  font-size: 1.7em;
+  font-weight: 500;
+  color: #5a5a5a;
+  padding: 20px 0px;
+}
+
+#clear {
+  clear: both;
+  margin-bottom: 20px;
+}
+
+#body {
+  background-color: white;
+}
+
+.menu {
+  border-bottom: 1px solid #f1f1f1;
+
+  a {
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 200;
+    text-decoration: none;
+    color: #5a5a5a;
+    padding: 15px 25px 15px 0px;
+  }
 }

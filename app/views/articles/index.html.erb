@@ -1,24 +1,28 @@
 <% if @articles.count == 0 %>
-  <div class="no_articles"></div>
+  <div class="no_articles">No articles yet, create it!</div>
 <% else %>
-  <div class="all_articles">
-    <div class="button first_button"><%= link_to 'Create article', new_article_path %></div>
-    <div class="button second_button"><%= link_to "Show planned", "#" , { onClick: "showArticles(event);" } %></div>
-
-    <div id="toggle">
-      <div class="all_art">Planned articles</div>
-      <ol>
-        <% @articles_planned.each do |article| %>
-          <li class="link_article"><%= link_to article.menu_label, article %></li>
-        <% end %>
-      </ol>
+  <div id="body">
+    <div class="index-new">
+      <div class="inner">
+        <div class="title-new">Content Management System</div>
+        <div class="menu">
+          <span><%= link_to 'Create article', new_article_path %></span>
+          <span><%= link_to "Show planned articles", "#" , { onClick: "showArticles(event);" } %></span>
+        </div>
+        <div class="article-index-outer" id="toggle">
+          <div class="title-published">Planned articles</div>
+          <% @articles_planned.each do |article| %>
+            <div class="article-index"><%= link_to article.menu_label, article %></div>
+          <% end %>
+        </div>
+        <div class="article-index-outer">
+          <div class="title-published">Published articles</div>
+          <% @articles_published.each do |article| %>
+            <div class="article-index"><%= link_to article.menu_label, article %></div>
+          <% end %>
+        </div>
+        <div id="clear"></div>
+      </div>
     </div>
-
-    <div class="all_art">Published articles</div>
-    <ol>
-      <% @articles_published.each do |article| %>
-        <li class="link_article"><%= link_to article.menu_label, article %></li>
-      <% end %>
-    </ol>
   </div>
 <% end %>
