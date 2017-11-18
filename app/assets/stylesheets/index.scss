@@ -3,7 +3,7 @@ body {
   padding: 0px;
   font-size: 14px;
   font-family: Open Sans;
-  background: #5999af linear-gradient(hsla(0,100%,100%,.7), transparent);
+  background: #e3e7ed linear-gradient(hsla(0,100%,100%,.7), transparent);
   min-height: 960px;
 }
 
@@ -37,18 +37,23 @@ body {
   height: 300px;
   border: 1px solid #f2f2f2;
   margin: 2px;
-  background-color: #123434;
-  overflow: hidden;
+  background-color: #5e697a;
+
+  span {
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+  }
 
   a {
     display: block;
     font-weight: 600;
     font-size: 1.3em;
-
     cursor: pointer;
-    color: #5a5a5a;
+    color: white;
     text-decoration: none;
     text-align: center;
+    height: 100%;
     line-height: 300px;
   }
 }
