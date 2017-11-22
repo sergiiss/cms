@@ -7,6 +7,26 @@ body {
   min-height: 960px;
 }
 
+.no-articles {
+  width: 710px;
+  height: 140px;
+  background-color: #5e697a;
+  margin: 140px auto 0px auto;
+  border-radius: 16px;
+  box-shadow: inset rgba(255,255,255,0.2) 8px  8px 18px 5px,
+              inset rgba(0,0,0,0.5)      -8px -8px 18px 5px;
+
+  a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    line-height: 140px;
+    font-size: 2.8em;
+    color: white;
+    text-decoration: none;
+  }
+}
+
 #toggle {
   display: none;
 }

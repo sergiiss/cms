@@ -57,7 +57,8 @@ class ArticlesController < ApplicationController
         :h1,
         :content,
         :published_at,
-        :priority
+        :priority,
+        :image
       )
   end
 

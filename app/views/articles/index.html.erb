@@ -1,18 +1,22 @@
-<% if @articles.count == 0 %>
-  <div class="no_articles">No articles yet, create it!</div>
-<% else %>
-  <div id="body">
-    <div class="index-new">
-      <div class="inner">
-        <div class="title-new">Content Management System</div>
-        <div class="menu">
-          <span><%= link_to 'Create article', new_article_path %></span>
-          <span>
-            <%= link_to "#" , { onClick: "showArticles(event);" } do %>
-              <span id="show-hide-text">Show planned articles</span>
-            <% end %>
-          </span>
-        </div>
+<div id="body">
+  <div class="index-new">
+    <div class="inner">
+      <div class="title-new">Content Management System</div>
+      <div class="menu">
+        <span><%= link_to 'Create article', new_article_path %></span>
+        <span>
+          <%= link_to "#" , { onClick: "showArticles(event);" } do %>
+            <span id="show-hide-text">Show planned articles</span>
+          <% end %>
+        </span>
+      </div>
+
+      <% if @articles.count == 0 %>
+
+        <div class="no-articles"><%= link_to "No articles yet, create it!", new_article_path %></div>
+
+      <% else %>
+
         <div class="article-index-outer" id="toggle">
           <div class="title-published">Planned articles</div>
           <% @articles_planned.each do |article| %>
@@ -30,7 +34,9 @@
           <% end %>
         </div>
         <div id="clear"></div>
-      </div>
+
+      <% end %>
+
     </div>
   </div>
-<% end %>
+</div>
