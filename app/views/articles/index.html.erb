@@ -10,7 +10,6 @@
           <% end %>
         </span>
       </div>
-
       <% if @articles.count == 0 %>
 
         <div class="no-articles"><%= link_to "No articles yet, create it!", new_article_path %></div>
@@ -20,13 +19,17 @@
         <div class="article-index-outer" id="toggle">
           <div class="title-published">Planned articles</div>
           <% @articles_planned.each do |article| %>
-            <div class="article-index"><%= link_to article.menu_label, article %></div>
+            <div class="article-index" style="background-image: url(<%= article.image.url(:medium) %>); background-size: cover;">
+              <%= link_to article do %>
+                <span><%= article.menu_label %></span>
+              <% end %>
+            </div>
           <% end %>
         </div>
         <div class="article-index-outer">
           <div class="title-published">Published articles</div>
           <% @articles_published.each do |article| %>
-            <div class="article-index">
+            <div class="article-index" style="background-image: url(<%= article.image.url(:medium) %>); background-size: cover;">
               <%= link_to article do %>
                 <span><%= article.menu_label %></span>
               <% end %>
@@ -36,7 +39,6 @@
         <div id="clear"></div>
 
       <% end %>
-
     </div>
   </div>
 </div>

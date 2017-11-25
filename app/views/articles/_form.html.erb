@@ -6,7 +6,7 @@
     </div>
 
     <div class="table-row">
-      <span class="table-cell"><%= f.label 'Фото статьи' %></span>
+      <span class="table-cell"><%= f.label 'Image article' %></span>
       <span class="table-cell"><%= f.file_field :image %></span>
     </div>
 
@@ -42,7 +42,7 @@
 
     <div class="table-row">
       <span class="table-cell"><%= f.label 'Priority' %></span>
-      <span class="table-cell"><%= f.number_field :priority %></span>
+      <span class="table-cell"><%= f.number_field :priority, value: 1 %></span>
     </div>
 
     <div class="table-row">

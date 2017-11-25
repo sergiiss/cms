@@ -62,13 +62,17 @@ body {
   span {
     line-height: normal;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
+    padding-top: 30px;
+    text-shadow: #888 1px 1px 0, #888 -1px -1px 0,
+                 #888 -1px 1px 0, #888 1px -1px 0;
   }
 
   a {
     display: block;
     font-weight: 600;
     font-size: 1.3em;
+    padding: 0px 10px;
     cursor: pointer;
     color: white;
     text-decoration: none;
