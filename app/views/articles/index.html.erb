@@ -2,6 +2,7 @@
   <div class="index-new">
     <div class="inner">
       <div class="title-new">Content Management System</div>
+
       <div class="menu">
         <span><%= link_to 'Create article', new_article_path %></span>
         <span>
@@ -10,12 +11,10 @@
           <% end %>
         </span>
       </div>
+
       <% if @articles.count == 0 %>
-
         <div class="no-articles"><%= link_to "No articles yet, create it!", new_article_path %></div>
-
       <% else %>
-
         <div class="article-index-outer" id="toggle">
           <div class="title-published">Planned articles</div>
           <% @articles_planned.each do |article| %>
@@ -37,7 +36,6 @@
           <% end %>
         </div>
         <div id="clear"></div>
-
       <% end %>
     </div>
   </div>

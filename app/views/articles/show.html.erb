@@ -12,7 +12,9 @@
   <div class="button fourth_button"><%= link_to 'Back', :back %></div>
 
   <h1 class="title_article"><%= @article.h1 %></h1>
+
   <div class="image-show"><%= image_tag @article.image.url %></div>
+
   <div class="text_article">
     <%== sanitize @article.content %>
   </div>
