@@ -32,9 +32,10 @@ body {
 
 .index-new {
   max-width: 1070px;
+  padding: 0px 50px;
   min-width: 580px;
   width: 100%;
-  min-height: 1080px;
+  min-height: 100vh;
   margin: 0px auto;
 }
 
@@ -55,7 +56,7 @@ body {
 
 .article-index {
   float: left;
-  width: 32.5%;
+  width: 32.75%;
   height: 300px;
   border: 1px solid #f2f2f2;
   margin: 2px;
