@@ -1,42 +1,40 @@
-<div id="body">
-  <div class="index-new">
-    <div class="inner">
-      <div class="title-new">Content Management System</div>
+<div class="index-new">
+  <div class="inner">
+    <div class="title-new">Content Management System</div>
 
-      <div class="menu">
-        <span><%= link_to 'Create article', new_article_path %></span>
-        <span>
-          <%= link_to "#" , { onClick: "showArticles(event);" } do %>
-            <span id="show-hide-text">Show planned articles</span>
-          <% end %>
-        </span>
-      </div>
-
-      <% if @articles.count == 0 %>
-        <div class="no-articles"><%= link_to "No articles yet, create it!", new_article_path %></div>
-      <% else %>
-        <div class="article-index-outer" id="toggle">
-          <div class="title-published">Planned articles</div>
-          <% @articles_planned.each do |article| %>
-            <div class="article-index" style="background-image: url(<%= article.image.url(:medium) %>); background-size: cover;">
-              <%= link_to article do %>
-                <span><%= article.menu_label %></span>
-              <% end %>
-            </div>
-          <% end %>
-        </div>
-        <div class="article-index-outer">
-          <div class="title-published">Published articles</div>
-          <% @articles_published.each do |article| %>
-            <div class="article-index" style="background-image: url(<%= article.image.url(:medium) %>); background-size: cover;">
-              <%= link_to article do %>
-                <span><%= article.menu_label %></span>
-              <% end %>
-            </div>
-          <% end %>
-        </div>
-        <div id="clear"></div>
-      <% end %>
+    <div class="menu">
+      <span><%= link_to 'Create article', new_article_path %></span>
+      <span>
+        <%= link_to "#" , { onClick: "showArticles(event);" } do %>
+          <span id="show-hide-text">Show planned articles</span>
+        <% end %>
+      </span>
     </div>
+
+    <% if @articles.count == 0 %>
+      <div class="no-articles"><%= link_to "No articles yet, create it!", new_article_path %></div>
+    <% else %>
+      <div class="article-index-outer" id="toggle">
+        <div class="title-published">Planned articles</div>
+        <% @articles_planned.each do |article| %>
+          <div class="article-index" style="background-image: url(<%= article.image.url(:medium) %>); background-size: cover;">
+            <%= link_to article do %>
+              <span><%= article.menu_label %></span>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+      <div class="article-index-outer">
+        <div class="title-published">Published articles</div>
+        <% @articles_published.each do |article| %>
+          <div class="article-index" style="background-image: url(<%= article.image.url(:medium) %>); background-size: cover;">
+            <%= link_to article do %>
+              <span><%= article.menu_label %></span>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+      <div id="clear"></div>
+    <% end %>
   </div>
 </div>
