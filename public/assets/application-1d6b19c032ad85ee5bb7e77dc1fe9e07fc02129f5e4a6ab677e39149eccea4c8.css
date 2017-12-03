@@ -1,0 +1,311 @@
+/* line 1, /home/sergei/Projects/cms/app/assets/stylesheets/articles.scss */
+.title_article {
+  padding: 25px 0px 0px 20px;
+  width: 1250px;
+}
+
+/* line 6, /home/sergei/Projects/cms/app/assets/stylesheets/articles.scss */
+.text_article {
+  line-height: 32px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 22px;
+  width: 1230px;
+  padding: 5px 20px 20px 20px;
+}
+
+/* line 15, /home/sergei/Projects/cms/app/assets/stylesheets/articles.scss */
+.show {
+  position: relative;
+  width: 1400px;
+  min-height: 960px;
+  margin: 0px auto;
+  background-color: #fcfdff;
+  font-family: Source Serif Pro,serif;
+  -moz-box-shadow: 0 0 8px rgba(188, 191, 195, 0.7);
+  -webkit-box-shadow: 0 0 8px rgba(188, 191, 195, 0.7);
+  box-shadow: 0 0 8px rgba(188, 191, 195, 0.7);
+}
+/* line 26, /home/sergei/Projects/cms/app/assets/stylesheets/articles.scss */
+.show h1 {
+  margin: 0px 0px 18px 0px;
+}
+
+/* line 31, /home/sergei/Projects/cms/app/assets/stylesheets/articles.scss */
+.button {
+  font-size: 0.9em;
+  width: 120px;
+  background-color: #ffa0a0;
+  height: 40px;
+  -moz-box-shadow: 0 0 7px rgba(0, 0, 1, 0.4);
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 1, 0.4);
+  box-shadow: 0 0 7px rgba(0, 0, 1, 0.4);
+  border-radius: 9px 0px 0px 9px;
+}
+/* line 41, /home/sergei/Projects/cms/app/assets/stylesheets/articles.scss */
+.button a {
+  padding: 5px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+/* line 53, /home/sergei/Projects/cms/app/assets/stylesheets/articles.scss */
+.first_button {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+/* line 59, /home/sergei/Projects/cms/app/assets/stylesheets/articles.scss */
+.second_button {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+}
+
+/* line 65, /home/sergei/Projects/cms/app/assets/stylesheets/articles.scss */
+.third_button {
+  position: absolute;
+  top: 110px;
+  right: 0px;
+}
+
+/* line 71, /home/sergei/Projects/cms/app/assets/stylesheets/articles.scss */
+.fourth_button {
+  position: absolute;
+  top: 160px;
+  right: 0px;
+}
+
+/* line 77, /home/sergei/Projects/cms/app/assets/stylesheets/articles.scss */
+.image-show img {
+  max-width: 1230px;
+  margin: 20px 0px 20px 20px;
+}
+/* line 1, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: Open Sans;
+  background: #e3e7ed linear-gradient(rgba(255, 255, 255, 0.7), transparent);
+  min-height: 960px;
+}
+
+/* line 10, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.no-articles {
+  width: 710px;
+  height: 140px;
+  background-color: #5e697a;
+  margin: 140px auto 0px auto;
+  border-radius: 16px;
+  box-shadow: inset rgba(255, 255, 255, 0.2) 8px 8px 18px 5px, inset rgba(0, 0, 0, 0.5) -8px -8px 18px 5px;
+}
+/* line 19, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.no-articles a {
+  display: block;
+  height: 100%;
+  text-align: center;
+  line-height: 140px;
+  font-size: 2.8em;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 30, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+#toggle {
+  display: none;
+}
+
+/* line 34, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.index-new {
+  width: 1070px;
+  min-height: 1080px;
+  margin: 0px auto;
+}
+
+/* line 40, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.inner {
+  width: 100%;
+}
+
+/* line 44, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.title-new {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.3em;
+  vertical-align: 65px;
+  padding: 15px 0px;
+  color: #5a5a5a;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* line 54, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.article-index {
+  float: left;
+  width: 350px;
+  height: 300px;
+  border: 1px solid #f2f2f2;
+  margin: 2px;
+  background-color: #5e697a;
+}
+/* line 62, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.article-index span {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 30px;
+  text-shadow: #888 1px 1px 0, #888 -1px -1px 0, #888 -1px 1px 0, #888 1px -1px 0;
+}
+/* line 71, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.article-index a {
+  display: block;
+  font-weight: 600;
+  font-size: 1.3em;
+  padding: 0px 10px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  height: 100%;
+  line-height: 300px;
+}
+
+/* line 85, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.article-index:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+/* line 92, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.article-index-outer {
+  min-height: 380px;
+  width: 1070px;
+  margin: 0px auto;
+}
+
+/* line 98, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.title-published {
+  font-size: 1.7em;
+  font-weight: 500;
+  color: #5a5a5a;
+  padding: 20px 0px;
+}
+
+/* line 105, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+#clear {
+  clear: both;
+  margin-bottom: 20px;
+}
+
+/* line 110, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+#body {
+  background-color: white;
+}
+
+/* line 114, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.menu {
+  border-bottom: 1px solid #f1f1f1;
+}
+/* line 117, /home/sergei/Projects/cms/app/assets/stylesheets/index.scss */
+.menu a {
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 200;
+  text-decoration: none;
+  color: #5a5a5a;
+  padding: 15px 25px 15px 0px;
+}
+/* line 1, /home/sergei/Projects/cms/app/assets/stylesheets/new_article.scss */
+.form-new {
+  position: relative;
+  margin: 0px auto;
+  width: 1400px;
+  padding: 10px 0px 20px 0px;
+  background-color: #fcfdff;
+  min-height: 960px;
+  -moz-box-shadow: 0 0 8px rgba(188, 191, 195, 0.7);
+  -webkit-box-shadow: 0 0 8px rgba(188, 191, 195, 0.7);
+  box-shadow: 0 0 8px rgba(188, 191, 195, 0.7);
+}
+
+/* line 13, /home/sergei/Projects/cms/app/assets/stylesheets/new_article.scss */
+#title {
+  margin-left: 190px;
+}
+
+/* line 17, /home/sergei/Projects/cms/app/assets/stylesheets/new_article.scss */
+.table-row {
+  display: table-row;
+}
+
+/* line 21, /home/sergei/Projects/cms/app/assets/stylesheets/new_article.scss */
+.table-cell {
+  display: table-cell;
+  padding-left: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  min-width: 150px;
+  vertical-align: top;
+}
+/* line 29, /home/sergei/Projects/cms/app/assets/stylesheets/new_article.scss */
+.table-cell label {
+  vertical-align: top;
+  height: 30px;
+}
+/* line 34, /home/sergei/Projects/cms/app/assets/stylesheets/new_article.scss */
+.table-cell select {
+  padding-left: 10px;
+  border-radius: 4px;
+  font-size: 1.2em;
+  background-color: #f9f9f9;
+}
+/* line 41, /home/sergei/Projects/cms/app/assets/stylesheets/new_article.scss */
+.table-cell textarea, .table-cell input {
+  border-radius: 4px;
+  font-size: 1.1em;
+  margin-top: 5px;
+  width: 990px;
+  height: 30px;
+  padding: 0px 10px;
+  border: 1px solid gray;
+}
+/* line 51, /home/sergei/Projects/cms/app/assets/stylesheets/new_article.scss */
+.table-cell textarea {
+  padding-left: 10px;
+  border-radius: 4px;
+  height: 669px;
+}
+
+/* line 58, /home/sergei/Projects/cms/app/assets/stylesheets/new_article.scss */
+#button input {
+  width: 1002px;
+  background: linear-gradient(to left, #d9ead0, #ade590, #8aed57, #ade590, #d9ead0);
+  color: white;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+@font-face { font-family: 'Open Sans'; src: url(fonts/OpenSans-Regular.ttf);}
