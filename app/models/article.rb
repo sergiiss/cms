@@ -10,6 +10,7 @@ class Article < ApplicationRecord
 
   validates :title, :description, :slug, :menu_label, :h1, :content, :published_at, presence: true
   validates_numericality_of :priority, only_integer: true
+  validates :title, length: { maximum: 40 }, uniqueness: true
 
   def normalize_friendly_id(input)
     input.to_s.to_slug.normalize(transliterations: :russian).to_s
