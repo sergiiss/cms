@@ -18,13 +18,9 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
 
     get article_path(article)
 
-    if article.nil?
-      assert_response :missing
-    else
-      assert_response :success
+    assert_response :success
 
-      assert_select "div", 7
-    end
+    assert_select "div", 7
   end
 
 
