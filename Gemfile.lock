@@ -49,6 +49,7 @@ GEM
       aws-sdk-core (= 2.10.71)
     aws-sigv4 (1.0.2)
     babosa (1.0.2)
+    bcrypt (3.1.11)
     bindex (0.5.0)
     builder (3.2.3)
     byebug (9.1.0)
@@ -224,6 +225,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk
   babosa
+  bcrypt (~> 3.1.7)
   byebug
   coffee-rails (~> 4.2)
   friendly_id
